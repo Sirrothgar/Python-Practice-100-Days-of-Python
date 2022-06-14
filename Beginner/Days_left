@@ -1,0 +1,12 @@
+# Create a program using maths and f-Strings that tells us how
+# many days, weeks, months we have left if we live until 90 years # old.
+age = input("What is your current age?")
+
+# Create variables to convert to int
+years = 90 - int(age)
+months = (90 * 12) - (int(age) * 12)
+weeks = (90 * 52) - (int(age) * 52)
+days = (90 * 365) - (int(age) * 365)
+
+#Print using f-string to display data types during the string
+print(f"You have {days} days, {weeks} weeks, and {months} months left.")
