@@ -23,21 +23,20 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 # Write your code below this line 👇
-road = str(input("You travel down the raod and come to a crossroad. Where do you want to go? Type 'left' or 'right' "))
+road = input("You travel down the raod and come to a crossroad. Where do you want to go? Type 'left' or 'right' ").lower()
 
 if road == "right":
     print("You didn't look good enough and fell into a bottomless pit. Game over.")
 elif road == "left":
     print(f"The road continues down to a lake where you see a island in the middle.")
 
-    lake = str(input("Do you wait for a boat or swim across? Type 'Swim' or 'Wait'"))
+    lake = input("Do you wait for a boat or swim across? Type 'Swim' or 'Wait'").lower()
     if lake == "swim":
         print("You forgot you don't know how to swim and drown. Game over.")
     elif lake == "wait":
         print(f"A boat falls out of the sky into the water to let you across.")
 
-        door = str(input(
-            "When you get to the island, there is a house with 3 doors. One red, one yellow, one blue. Which color do you choose?"))
+        door = input("When you get to the island, there is a house with 3 doors. One red, one yellow, one blue. Which color do you choose?").lower()
         if door == "red":
             print("Fire shoots out of the door and you melt to death. Game over.")
         elif door == "blue":
